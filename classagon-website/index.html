@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classagon | India's AI-Proctored Learning Marketplace</title>
+  <meta name="description" content="Discover open courses, verified providers, and AI-proctored assessments on Classagon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="audience-strip">
+    <a href="#">For Learners</a>
+    <a href="providers.html">For Educators</a>
+    <a href="#">For Institutions</a>
+    <a href="#">For Enterprise</a>
+  </div>
+  <header class="topbar">
+    <a class="brand" href="index.html"><img src="assets/classagon_logo.png" alt="Classagon" /><span>Classagon</span></a>
+    <nav class="nav-links full-nav">
+      <a href="index.html#courses">Courses</a>
+      <a href="proctoring.html">AI Proctoring</a>
+      <a href="providers.html">For Educators</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="right-group">
+      <button id="loginBtn" class="btn ghost" type="button">Log in</button>
+      <a class="btn solid app-link" href="http://127.0.0.1:8000/">Open Classagon App</a>
+      <div id="userPill" class="user-pill hidden"><span id="userNameText"></span><button id="logoutBtn" type="button">Logout</button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-shell reveal">
+      <div class="hero-content">
+        <p class="badge-line">India's First AI-Proctored Open-Course Marketplace</p>
+        <h1>Learn from trusted creators and <span>prove your skills</span> with assessment integrity.</h1>
+        <p class="hero-sub">Classagon combines open access learning with high-confidence outcomes for learners, educators, and hiring teams.</p>
+
+        <label class="search-wrap" aria-label="Search for courses">
+          <span class="search-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+              <path d="M20 20L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <input id="courseSearch" type="search" placeholder="Search for courses, skills, or career tracks..." />
+        </label>
+
+        <div class="stats-grid">
+          <article><h3 id="statCourses">0+</h3><p>Active Courses</p></article>
+          <article><h3>15K+</h3><p>Learners</p></article>
+          <article><h3>300+</h3><p>Verified Educators</p></article>
+          <article><h3>20+</h3><p>Categories</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section brand-statement reveal">
+      <div class="big-claim">
+        <h2>Why Classagon</h2>
+        <p>Most platforms optimize for enrollment. Classagon optimizes for <strong>learning credibility</strong>: open access courses, AI-proctored assessments, and verifiable outcomes in one student journey.</p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-head"><h2>Learn from Leading Partner</h2></div>
+      <div class="partner-line" aria-label="Partner logos">
+        <span>Google</span>
+      </div>
+    </section>
+
+    <section id="courses" class="section courses reveal">
+      <div class="section-head"><h2>Explore Courses</h2><a class="app-link" href="http://127.0.0.1:8000/">View all in app</a></div>
+      <div class="category-row" id="categoryRow"></div>
+      <div id="loadingState" class="loading-grid"></div>
+      <div id="emptyState" class="empty-state hidden"><p>No courses found. Try a different search or category.</p></div>
+      <div id="courseGrid" class="course-grid hidden"></div>
+    </section>
+
+    <section class="section editorial reveal">
+      <div class="editorial-copy">
+        <h2>Built for How People Actually Learn</h2>
+        <p>Classagon keeps the learner journey clean: discover, practice, attempt, validate. Instead of overwhelming dashboards, we prioritize a focused path that leads to trusted outcomes.</p>
+        <ul class="journey-list">
+          <li><strong>Discover Fast:</strong> goal-oriented exploration with skill-level clarity.</li>
+          <li><strong>Learn Flexibly:</strong> recorded-first modules with milestone checkpoints.</li>
+          <li><strong>Validate Credibly:</strong> AI-proctored assessments to strengthen certificate trust.</li>
+        </ul>
+      </div>
+      <div class="editorial-visual">
+        <img src="https://images.unsplash.com/photo-1584697964191-cd732c8fce06?auto=format&fit=crop&w=1200&q=70" alt="Online learning experience" />
+      </div>
+    </section>
+
+    <section class="section route-panel reveal">
+      <h3>Start on the website, continue in the Classagon app.</h3>
+      <p>Enrollment, course delivery, assessments, and certification are fully managed in the Classagon application.</p>
+      <a class="btn solid app-link" href="http://127.0.0.1:8000/">Launch Classagon App</a>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-head"><h2>Frequently Asked Questions</h2></div>
+      <div class="faq-plain">
+        <details>
+          <summary>Are Classagon certificates trusted by employers?</summary>
+          <p>Yes. Assessments are tied to skill outcomes and supported by AI-proctored integrity events.</p>
+        </details>
+        <details>
+          <summary>Can I start for free?</summary>
+          <p>Yes. You can explore selected open courses and upgrade based on your learning goals.</p>
+        </details>
+        <details>
+          <summary>Does Classagon support institutions and teams?</summary>
+          <p>Yes. Classagon supports educator onboarding, cohort management, and enterprise learning workflows.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Classagon</strong><p>Learning marketplace with trusted outcomes.</p></div>
+    <p>© 2026 Classagon. All rights reserved.</p>
+  </footer>
+
+  <script src="common.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

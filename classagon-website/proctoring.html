@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Proctoring | Classagon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="audience-strip">
+    <a href="index.html">For Learners</a>
+    <a href="providers.html">For Educators</a>
+    <a href="#">For Institutions</a>
+    <a href="#">For Enterprise</a>
+  </div>
+  <header class="topbar">
+    <a class="brand" href="index.html"><img src="assets/classagon_logo.png" alt="Classagon" /><span>Classagon</span></a>
+    <nav class="nav-links full-nav">
+      <a href="index.html#courses">Courses</a>
+      <a href="proctoring.html">AI Proctoring</a>
+      <a href="providers.html">For Educators</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="right-group">
+      <button id="loginBtn" class="btn ghost" type="button">Log in</button>
+      <a class="btn solid app-link" href="http://127.0.0.1:8000/">Open Classagon App</a>
+      <div id="userPill" class="user-pill hidden"><span id="userNameText"></span><button id="logoutBtn" type="button">Logout</button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section proctor-hero reveal">
+      <div class="proctor-ambient" aria-hidden="true">
+        <span class="orb orb-one"></span>
+        <span class="orb orb-two"></span>
+        <span class="orb orb-three"></span>
+        <span class="scanline"></span>
+      </div>
+      <p class="badge-line">Integrity Infrastructure</p>
+      <h1>AI-proctored assessments for open courses at national scale.</h1>
+      <p class="hero-sub align-left">Classagon’s proctoring layer is designed to keep open learning outcomes dependable for institutions, employers, and ambitious learners.</p>
+    </section>
+
+    <section class="section proctor-flow reveal">
+      <div class="section-head"><h2>How Proctoring Works</h2></div>
+      <div class="flow-line">
+        <article>
+          <h3>01. Session Integrity Signals</h3>
+          <p>Participation consistency, interaction anomalies, and focus events are monitored continuously in assessment windows.</p>
+        </article>
+        <article>
+          <h3>02. Flag + Review Workflow</h3>
+          <p>AI flags are routed to human moderation queues to reduce false positives and preserve fairness across learner cohorts.</p>
+        </article>
+        <article>
+          <h3>03. Audit Trails</h3>
+          <p>Timestamped records support dispute resolution, institutional quality reviews, and compliance evidence when needed.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section proctor-principles reveal">
+      <div class="section-head"><h2>Proctoring Philosophy</h2></div>
+      <div class="proctor-carousel" data-carousel>
+        <button class="carousel-nav prev" type="button" data-prev aria-label="Previous">‹</button>
+        <div class="carousel-track" data-track>
+          <article class="carousel-slide active">
+          <h3>Access + Trust</h3>
+          <p>Open enrollment should never force low-confidence outcomes.</p>
+          </article>
+          <article class="carousel-slide">
+          <h3>Assistive, Not Punitive</h3>
+          <p>Signals guide risk scoring and review, not default penalties.</p>
+          </article>
+          <article class="carousel-slide">
+          <h3>Institution-Ready</h3>
+          <p>Designed for schools, training organizations, and workforce programs.</p>
+          </article>
+        </div>
+        <button class="carousel-nav next" type="button" data-next aria-label="Next">›</button>
+      </div>
+      <div class="carousel-dots" data-dots>
+        <button type="button" class="active" aria-label="Slide 1"></button>
+        <button type="button" aria-label="Slide 2"></button>
+        <button type="button" aria-label="Slide 3"></button>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Classagon</p></footer>
+  <script src="common.js"></script>
+</body>
+</html>
