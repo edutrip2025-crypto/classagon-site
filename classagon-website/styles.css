@@ -1,6 +1,6 @@
 :root {
-  --bg: #f4f8fb;
-  --surface: rgba(255, 255, 255, 0.76);
+  --bg: #ffffff;
+  --surface: #ffffff;
   --surface-strong: #ffffff;
   --ink: #122034;
   --muted: #5d6d81;
@@ -23,10 +23,7 @@ body {
   margin: 0;
   font-family: "Outfit", sans-serif;
   color: var(--ink);
-  background:
-    radial-gradient(circle at 12% 10%, rgba(15, 118, 110, 0.12), transparent 24%),
-    radial-gradient(circle at 90% 8%, rgba(102, 178, 255, 0.16), transparent 28%),
-    linear-gradient(180deg, #f8fbfd 0%, var(--bg) 54%, #eef5f8 100%);
+  background: #ffffff;
 }
 
 a {
@@ -801,6 +798,147 @@ main {
   line-height: 1.7;
 }
 
+.enterprise-operating-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
+  gap: 36px;
+  align-items: start;
+  padding: 24px 0 6px;
+}
+
+.enterprise-operating-copy h3 {
+  margin: 8px 0 0;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.55rem, 2.4vw, 2.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.enterprise-operating-copy p:last-child {
+  margin: 14px 0 0;
+  color: var(--muted);
+  line-height: 1.75;
+  max-width: 58ch;
+}
+
+.enterprise-operating-points {
+  display: grid;
+  gap: 18px;
+}
+
+.enterprise-operating-points div {
+  padding: 0 0 16px 18px;
+  border-left: 2px solid rgba(15, 118, 110, 0.24);
+  border-bottom: 1px solid rgba(18, 32, 52, 0.08);
+}
+
+.enterprise-operating-points strong,
+.enterprise-proof-strip strong,
+.enterprise-lane-body h3 {
+  display: block;
+  font-family: "Manrope", sans-serif;
+}
+
+.enterprise-operating-points strong {
+  font-size: 1.02rem;
+}
+
+.enterprise-operating-points span {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.enterprise-map {
+  display: grid;
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.enterprise-lane {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr) minmax(220px, 280px);
+  gap: 26px;
+  align-items: start;
+  padding: 22px 0;
+  border-top: 1px solid rgba(18, 32, 52, 0.08);
+}
+
+.enterprise-lane:last-child {
+  border-bottom: 1px solid rgba(18, 32, 52, 0.08);
+}
+
+.enterprise-lane-tag {
+  padding-top: 4px;
+  color: var(--brand-strong);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.enterprise-lane-body h3 {
+  margin: 0;
+  font-size: clamp(1.28rem, 2vw, 1.65rem);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.enterprise-lane-body p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.72;
+  max-width: 60ch;
+}
+
+.enterprise-lane-outcome {
+  display: grid;
+  gap: 10px;
+  padding-top: 2px;
+}
+
+.enterprise-lane-outcome span {
+  display: block;
+  padding-left: 16px;
+  position: relative;
+  color: #2c4d66;
+  font-size: 0.94rem;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.enterprise-lane-outcome span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--brand);
+  transform: translateY(-50%);
+}
+
+.enterprise-proof-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.enterprise-proof-strip div {
+  padding: 18px 0 0;
+  border-top: 2px solid rgba(15, 118, 110, 0.22);
+}
+
+.enterprise-proof-strip p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.68;
+}
+
 .proctor-hero {
   position: relative;
   overflow: hidden;
@@ -1106,6 +1244,16 @@ footer p {
 
   .spotlight-band {
     grid-template-columns: 1fr;
+  }
+
+  .enterprise-operating-band,
+  .enterprise-proof-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .enterprise-lane {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 }
 
