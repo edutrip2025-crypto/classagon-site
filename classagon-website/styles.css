@@ -1031,6 +1031,22 @@ main {
   margin-top: 18px;
 }
 
+.proctor-philosophy-head {
+  justify-content: center;
+}
+
+.proctor-philosophy-head > div {
+  max-width: 860px;
+  text-align: center;
+}
+
+.proctor-philosophy-head .section-lead {
+  max-width: 42ch;
+  margin: 14px auto 0;
+  font-size: clamp(1.18rem, 2vw, 1.55rem);
+  line-height: 1.6;
+}
+
 .carousel-track {
   min-height: 240px;
   display: grid;
