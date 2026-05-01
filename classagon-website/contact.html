@@ -1,84 +1,129 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Classagon</title>
-  <meta name="description" content="Contact Classagon for learner support, educator onboarding, partnerships, and enterprise deployment." />
+  <meta name="description" content="Contact Classagon for learner support, educator onboarding, institutional partnerships, and enterprise deployment." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="audience-strip">
-    <a href="index.html">For Learners</a>
-    <a href="providers.html">For Educators</a>
-    <a href="#">For Institutions</a>
-    <a href="#">For Enterprise</a>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <span class="logo-mark"><img src="assets/classagon_logo.png" alt="Classagon" /></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html#courses">Courses</a>
+        <a href="proctoring.html">AI Proctoring</a>
+        <a href="enterprise.html">Enterprise</a>
+        <a href="providers.html">Educators</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="right-group">
+        <button id="loginBtn" class="btn ghost" type="button">
+          <span class="icon-glyph" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M4 21C4 17.6863 7.58172 15 12 15C16.4183 15 20 17.6863 20 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>Log in</span>
+        </button>
+        <a class="btn solid app-link" href="http://127.0.0.1:8000/">
+          <span class="icon-glyph" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>Sign up</span>
+        </a>
+        <div id="userPill" class="user-pill hidden">
+          <span id="userNameText"></span>
+          <button id="logoutBtn" type="button">Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero reveal">
+        <div>
+          <h1>Talk to the team behind <span>trusted learning outcomes</span>.</h1>
+          <p>Whether you are exploring Classagon for learners, educators, institutions, or enterprise deployment, we can route you to the right workflow quickly.</p>
+        </div>
+        <div class="page-hero-visual">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=70" alt="Team meeting" />
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="contact-grid">
+          <div>
+            <h2 class="section-title">Send a message</h2>
+            <p class="section-lead">Use the form for learner support, educator onboarding, partnership conversations, or institution-led deployment discussions.</p>
+            <form class="contact-form">
+              <label for="name">Full name</label>
+              <input id="name" type="text" placeholder="Your name" />
+
+              <label for="email">Work email</label>
+              <input id="email" type="email" placeholder="you@company.com" />
+
+              <label for="type">I am contacting about</label>
+              <select id="type">
+                <option>Learner support</option>
+                <option>Educator onboarding</option>
+                <option>Institution partnership</option>
+                <option>Enterprise deployment</option>
+                <option>Media inquiry</option>
+              </select>
+
+              <label for="message">Message</label>
+              <textarea id="message" rows="6" placeholder="Tell us what you need..."></textarea>
+
+              <button class="btn solid" type="button">Submit inquiry</button>
+            </form>
+          </div>
+
+          <aside class="contact-notes">
+            <div>
+              <strong>Email</strong>
+              <span>hello@classagon.com</span>
+            </div>
+            <div>
+              <strong>Educator onboarding</strong>
+              <span>creators@classagon.com</span>
+            </div>
+            <div>
+              <strong>Partnerships</strong>
+              <span>partners@classagon.com</span>
+            </div>
+            <div>
+              <strong>Location</strong>
+              <span>Bengaluru, India</span>
+            </div>
+            <div>
+              <strong>Hours</strong>
+              <span>Monday to Friday, 10:00-18:00 IST</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>Classagon</strong>
+        <p>Talk to the team building the signal layer.</p>
+      </div>
+      <p>&copy; 2026 Classagon. All rights reserved.</p>
+    </footer>
   </div>
-  <header class="topbar">
-    <a class="brand" href="index.html"><img src="assets/classagon_logo.png" alt="Classagon" /><span>Classagon</span></a>
-    <nav class="nav-links full-nav">
-      <a href="index.html#courses">Courses</a>
-      <a href="proctoring.html">AI Proctoring</a>
-      <a href="providers.html">For Educators</a>
-      
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="right-group">
-      <button id="loginBtn" class="btn ghost" type="button">Log in</button>
-      <a class="btn solid app-link" href="http://127.0.0.1:8000/">Open Classagon App</a>
-      <div id="userPill" class="user-pill hidden"><span id="userNameText"></span><button id="logoutBtn" type="button">Logout</button></div>
-    </div>
-  </header>
 
-  <main>
-    <section class="section">
-      <p class="badge-line">Contact Classagon</p>
-      <h1>Talk to us about learners, educators, or partnerships.</h1>
-      <p class="hero-sub">Whether you are a student, creator, institution, or hiring partner, we can help you onboard to the right Classagon flow.</p>
-    </section>
-
-    <section class="section contact-grid">
-      <article class="contact-panel">
-        <h3>Send a message</h3>
-        <p>We typically respond within 24 business hours.</p>
-        <form class="contact-form">
-          <label for="name">Full name</label>
-          <input id="name" type="text" placeholder="Your name" />
-
-          <label for="email">Work email</label>
-          <input id="email" type="email" placeholder="you@company.com" />
-
-          <label for="type">I am contacting about</label>
-          <select id="type">
-            <option>Learner support</option>
-            <option>Educator onboarding</option>
-            <option>Institution partnership</option>
-            <option>Enterprise deployment</option>
-            <option>Media inquiry</option>
-          </select>
-
-          <label for="message">Message</label>
-          <textarea id="message" rows="5" placeholder="Tell us what you need..."></textarea>
-
-          <button class="btn solid" type="button">Submit Inquiry</button>
-        </form>
-      </article>
-
-      <aside class="contact-panel">
-        <h3>Direct Channels</h3>
-        <p><strong>Email:</strong> hello@classagon.com</p>
-        <p><strong>Partnerships:</strong> partners@classagon.com</p>
-        <p><strong>Educators:</strong> creators@classagon.com</p>
-        <p><strong>Location:</strong> Bengaluru, India</p>
-        <p><strong>Hours:</strong> Mon-Fri, 10:00-18:00 IST</p>
-      </aside>
-    </section>
-  </main>
-
-  <footer><p>© 2026 Classagon</p></footer>
   <script src="common.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -10,88 +10,154 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="audience-strip">
-    <a href="index.html">For Learners</a>
-    <a href="providers.html">For Educators</a>
-    <a href="#">For Institutions</a>
-    <a href="#">For Enterprise</a>
-  </div>
-  <header class="topbar">
-    <a class="brand" href="index.html"><img src="assets/classagon_logo.png" alt="Classagon" /><span>Classagon</span></a>
-    <nav class="nav-links full-nav">
-      <a href="index.html#courses">Courses</a>
-      <a href="proctoring.html">AI Proctoring</a>
-      <a href="providers.html">For Educators</a>
-      
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="right-group">
-      <button id="loginBtn" class="btn ghost" type="button">Log in</button>
-      <a class="btn solid app-link" href="http://127.0.0.1:8000/">Open Classagon App</a>
-      <div id="userPill" class="user-pill hidden"><span id="userNameText"></span><button id="logoutBtn" type="button">Logout</button></div>
-    </div>
-  </header>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <span class="logo-mark"><img src="assets/classagon_logo.png" alt="Classagon" /></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html#courses">Courses</a>
+        <a href="proctoring.html">AI Proctoring</a>
+        <a href="enterprise.html">Enterprise</a>
+        <a href="providers.html">Educators</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-  <main>
-    <section class="section proctor-hero reveal">
-      <div class="proctor-ambient" aria-hidden="true">
-        <span class="orb orb-one"></span>
-        <span class="orb orb-two"></span>
-        <span class="orb orb-three"></span>
-        <span class="scanline"></span>
+      <div class="right-group">
+        <button id="loginBtn" class="btn ghost" type="button">
+          <span class="icon-glyph" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M4 21C4 17.6863 7.58172 15 12 15C16.4183 15 20 17.6863 20 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>Log in</span>
+        </button>
+        <a class="btn solid app-link" href="http://127.0.0.1:8000/">
+          <span class="icon-glyph" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>Sign up</span>
+        </a>
+        <div id="userPill" class="user-pill hidden">
+          <span id="userNameText"></span>
+          <button id="logoutBtn" type="button">Logout</button>
+        </div>
       </div>
-      <p class="badge-line">Integrity Infrastructure</p>
-      <h1>AI-proctored assessments for open courses at national scale.</h1>
-      <p class="hero-sub align-left">Classagon’s proctoring layer is designed to keep open learning outcomes dependable for institutions, employers, and ambitious learners.</p>
-    </section>
+    </header>
 
-    <section class="section proctor-flow reveal">
-      <div class="section-head"><h2>How Proctoring Works</h2></div>
-      <div class="flow-line">
-        <article>
-          <h3>01. Session Integrity Signals</h3>
-          <p>Participation consistency, interaction anomalies, and focus events are monitored continuously in assessment windows.</p>
-        </article>
-        <article>
-          <h3>02. Flag + Review Workflow</h3>
-          <p>AI flags are routed to human moderation queues to reduce false positives and preserve fairness across learner cohorts.</p>
-        </article>
-        <article>
-          <h3>03. Audit Trails</h3>
-          <p>Timestamped records support dispute resolution, institutional quality reviews, and compliance evidence when needed.</p>
-        </article>
-      </div>
-    </section>
+    <main>
+      <section class="page-hero reveal proctor-hero">
+        <div class="proctor-ambient" aria-hidden="true">
+          <span class="orb orb-one"></span>
+          <span class="orb orb-two"></span>
+          <span class="orb orb-three"></span>
+          <span class="scanline"></span>
+        </div>
+        <div>
+          <h1>AI-proctored assessment built for <span>open learning at scale</span>.</h1>
+          <p>Classagon keeps public learning credible through structured signals, moderation workflows, and auditability that institutions can stand behind.</p>
+        </div>
+        <div class="page-hero-visual">
+          <div class="stage-grid"></div>
+          <div class="stage-panel primary">
+            <p class="stage-overline">Signal overview</p>
+            <h2 class="stage-title">Every attempt produces a confidence trail, not just a score.</h2>
+            <div class="signal-bars">
+              <span style="--fill: 84%;"></span>
+              <span style="--fill: 66%;"></span>
+              <span style="--fill: 92%;"></span>
+            </div>
+          </div>
+          <div class="stage-panel secondary">
+            <p class="stage-overline">Moderation stack</p>
+            <div class="signal-grid">
+              <div><strong>Identity</strong><span>session-linked presence checks</span></div>
+              <div><strong>Review</strong><span>flag escalation flow</span></div>
+              <div><strong>Logs</strong><span>traceable evidence trail</span></div>
+              <div><strong>Trust</strong><span>stronger final credentials</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="section proctor-principles reveal">
-      <div class="section-head"><h2>Proctoring Philosophy</h2></div>
-      <div class="proctor-carousel" data-carousel>
-        <button class="carousel-nav prev" type="button" data-prev aria-label="Previous">‹</button>
-        <div class="carousel-track" data-track>
-          <article class="carousel-slide active">
-          <h3>Access + Trust</h3>
-          <p>Open enrollment should never force low-confidence outcomes.</p>
+      <section class="section reveal">
+        <div class="section-head">
+          <div>
+            <h2>How the proctoring layer works</h2>
+            <p class="section-lead">The goal is not to police learning. The goal is to make the assessment outcome defensible when it matters.</p>
+          </div>
+        </div>
+        <div class="stack-list">
+          <article class="stack-item">
+            <div class="stack-index">Step 01</div>
+            <div>
+              <h3>Session integrity signals</h3>
+              <p>Classagon watches for presence consistency, attention shifts, interruption patterns, and environment anomalies during protected assessment windows.</p>
+            </div>
           </article>
-          <article class="carousel-slide">
-          <h3>Assistive, Not Punitive</h3>
-          <p>Signals guide risk scoring and review, not default penalties.</p>
+          <article class="stack-item">
+            <div class="stack-index">Step 02</div>
+            <div>
+              <h3>Flag and review workflow</h3>
+              <p>AI does not issue verdicts in isolation. Risk events are routed into review queues so institutions can apply judgment with context and fairness.</p>
+            </div>
           </article>
-          <article class="carousel-slide">
-          <h3>Institution-Ready</h3>
-          <p>Designed for schools, training organizations, and workforce programs.</p>
+          <article class="stack-item">
+            <div class="stack-index">Step 03</div>
+            <div>
+              <h3>Audit trails that survive scrutiny</h3>
+              <p>Each critical event is time-linked and reviewable, supporting moderation, dispute handling, and downstream confidence in the final certificate.</p>
+            </div>
           </article>
         </div>
-        <button class="carousel-nav next" type="button" data-next aria-label="Next">›</button>
-      </div>
-      <div class="carousel-dots" data-dots>
-        <button type="button" class="active" aria-label="Slide 1"></button>
-        <button type="button" aria-label="Slide 2"></button>
-        <button type="button" aria-label="Slide 3"></button>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer><p>© 2026 Classagon</p></footer>
+      <section class="section reveal">
+        <div class="section-head">
+          <div>
+            <h2>Proctoring philosophy</h2>
+            <p class="section-lead">This layer is designed to help open learning earn institutional trust without making the learner experience punitive.</p>
+          </div>
+        </div>
+        <div class="proctor-carousel" data-carousel>
+          <button class="carousel-nav" type="button" data-prev aria-label="Previous">‹</button>
+          <div class="carousel-track" data-track>
+            <article class="carousel-slide active">
+              <h3>Access + trust</h3>
+              <p>Open enrollment should not force low-confidence credentials. Accessibility and credibility need to coexist in the same learning model.</p>
+            </article>
+            <article class="carousel-slide">
+              <h3>Assistive, not punitive</h3>
+              <p>Signals help identify risk and guide review. The system is built to create evidence, not perform arbitrary punishment.</p>
+            </article>
+            <article class="carousel-slide">
+              <h3>Institution-ready from day one</h3>
+              <p>Schools, workforce academies, and training organizations need process integrity they can explain. Classagon gives them that language and evidence.</p>
+            </article>
+          </div>
+          <button class="carousel-nav" type="button" data-next aria-label="Next">›</button>
+        </div>
+        <div class="carousel-dots" data-dots>
+          <button type="button" class="active" aria-label="Slide 1"></button>
+          <button type="button" aria-label="Slide 2"></button>
+          <button type="button" aria-label="Slide 3"></button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>Classagon</strong>
+        <p>Assessment confidence for open learning.</p>
+      </div>
+      <p>&copy; 2026 Classagon. All rights reserved.</p>
+    </footer>
+  </div>
+
   <script src="common.js"></script>
 </body>
 </html>

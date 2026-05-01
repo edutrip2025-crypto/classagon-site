@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -10,51 +10,121 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="audience-strip">
-    <a href="index.html">For Learners</a>
-    <a href="providers.html">For Educators</a>
-    <a href="#">For Institutions</a>
-    <a href="#">For Enterprise</a>
-  </div>
-  <header class="topbar">
-    <a class="brand" href="index.html"><img src="assets/classagon_logo.png" alt="Classagon" /><span>Classagon</span></a>
-    <nav class="nav-links full-nav">
-      <a href="index.html#courses">Courses</a>
-      <a href="proctoring.html">AI Proctoring</a>
-      <a href="providers.html">For Educators</a>
-      
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="right-group">
-      <button id="loginBtn" class="btn ghost" type="button">Log in</button>
-      <a class="btn solid app-link" href="http://127.0.0.1:8000/">Open Classagon App</a>
-      <div id="userPill" class="user-pill hidden"><span id="userNameText"></span><button id="logoutBtn" type="button">Logout</button></div>
-    </div>
-  </header>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <span class="logo-mark"><img src="assets/classagon_logo.png" alt="Classagon" /></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html#courses">Courses</a>
+        <a href="proctoring.html">AI Proctoring</a>
+        <a href="enterprise.html">Enterprise</a>
+        <a href="providers.html">Educators</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-  <main>
-    <section class="section">
-      <p class="badge-line">For Educators and Institutions</p>
-      <h1>Publish high-impact courses with trusted learner outcomes.</h1>
-      <p class="hero-sub">Classagon helps creators and academic teams move from content delivery to measurable skill outcomes.</p>
-    </section>
-
-    <section class="section">
-      <div class="feature-grid">
-        <article><h3>Program Authoring</h3><p>Build structured modules and assessments with progression clarity.</p></article>
-        <article><h3>Learner Progress Signals</h3><p>See completions, weak skill areas, and assessment readiness patterns.</p></article>
-        <article><h3>Credential Confidence</h3><p>Issue certificates backed by AI-proctored evaluation events.</p></article>
+      <div class="right-group">
+        <button id="loginBtn" class="btn ghost" type="button">
+          <span class="icon-glyph" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M4 21C4 17.6863 7.58172 15 12 15C16.4183 15 20 17.6863 20 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>Log in</span>
+        </button>
+        <a class="btn solid app-link" href="http://127.0.0.1:8000/">
+          <span class="icon-glyph" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>Sign up</span>
+        </a>
+        <div id="userPill" class="user-pill hidden">
+          <span id="userNameText"></span>
+          <button id="logoutBtn" type="button">Logout</button>
+        </div>
       </div>
-    </section>
+    </header>
 
-    <section class="section route-panel">
-      <h3>Ready to publish on Classagon?</h3>
-      <p>Set up your educator profile, submit your first course, and onboard your learner community.</p>
-      <a class="btn solid app-link" href="http://127.0.0.1:8000/">Create Educator Account</a>
-    </section>
-  </main>
+    <main>
+      <section class="page-hero reveal">
+        <div>
+          <h1>Publish learning that ends in <span>trusted outcomes</span>.</h1>
+          <p>Classagon helps educators move beyond content delivery into managed assessments, structured pathways, and credentials that carry real signal outside the platform.</p>
+        </div>
+        <div class="page-hero-visual">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=70" alt="Educators collaborating" />
+        </div>
+      </section>
 
-  <footer><p>© 2026 Classagon</p></footer>
+      <section class="section reveal">
+        <div class="section-head">
+          <div>
+            <h2>Provider operating system</h2>
+            <p class="section-lead">This is where a provider moves from uploading lessons to running a serious learning business with measured outcomes.</p>
+          </div>
+        </div>
+        <div class="spotlight-band">
+          <article>
+            <h3>Author once, deliver repeatedly</h3>
+            <p>Shape modules, checkpoints, and assessments into repeatable course products without losing academic structure.</p>
+          </article>
+          <article>
+            <h3>See the learner signal early</h3>
+            <p>Track who is progressing, where cohorts are stalling, and when a learner is genuinely ready for evaluation.</p>
+          </article>
+          <article>
+            <h3>Issue credentials that carry weight</h3>
+            <p>Completion alone is weak. Classagon ties the final credential to performance and integrity evidence.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="institutions" class="section reveal">
+        <div class="section-head">
+          <div>
+            <h2>Built for multiple provider models</h2>
+            <p class="section-lead">Independent instructors, academies, university extensions, and workforce teams all need different scale. The trust layer should remain consistent.</p>
+          </div>
+        </div>
+        <div class="stack-list">
+          <article class="stack-item">
+            <div class="stack-index">Independent</div>
+            <div>
+              <h3>Premium creators</h3>
+              <p>Grow a course business without settling for low-trust completion badges.</p>
+            </div>
+          </article>
+          <article class="stack-item">
+            <div class="stack-index">Institutional</div>
+            <div>
+              <h3>Training and higher education teams</h3>
+              <p>Run open or blended cohorts with stronger governance over outcomes and review processes.</p>
+            </div>
+          </article>
+          <article class="stack-item">
+            <div class="stack-index">Workforce</div>
+            <div>
+              <h3>Career and upskilling academies</h3>
+              <p>Create pathways that hiring teams can trust when capability needs to be demonstrated, not inferred.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>Classagon</strong>
+        <p>Built for educators who care about real signal.</p>
+      </div>
+      <p>&copy; 2026 Classagon. All rights reserved.</p>
+    </footer>
+  </div>
+
   <script src="common.js"></script>
 </body>
 </html>
